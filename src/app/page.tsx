@@ -1,6 +1,6 @@
+import { redirect } from 'next/navigation'
 
-export default function Home() {
-  return (
-    <h1 className='text-5xl'>Hola Mudno</h1>
-  )
+export default function HomePage() {
+
+  redirect('/dashboard');
 }

@@ -5,6 +5,7 @@ import { TodoItem } from "./TodoItem"
 // import * as todosApi from '@/todos/helpers/todos'
 // import { useRouter } from "next/navigation"
 import { toggleTodo } from '@/todos/actions/todo-actions'
+import { TodoItemExperimental } from "./TodoItemExperimental";
 
 interface Props {
     todos?: Todo[]
@@ -24,7 +25,8 @@ export const TodosGrid = ({ todos = [] }: Props) => {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {
-                todos.map(todo => <TodoItem toggleTodo={toggleTodo} todo={todo} key={todo.id} />)
+                // todos.map(todo => <TodoItem toggleTodo={toggleTodo} todo={todo} key={todo.id} />)
+                todos.map(todo => <TodoItemExperimental toggleTodo={toggleTodo} todo={todo} key={todo.id} />)
             }
         </div>
     )
