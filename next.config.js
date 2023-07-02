@@ -4,7 +4,7 @@ const nextConfig = {
         serverActions: true,
     },
     images: {
-        domains: ['tailus.io'],   
+        domains: ['tailus.io','avatars.githubusercontent.com', 'lh3.googleusercontent.com'],   
     }
 }
 
